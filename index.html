@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hind:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yellowtail&display=swap"
+      rel="stylesheet" />
+
+    <title>Organick</title>
   </head>
+
   <body>
-    jhjhjh
+      <header class="py-5 px-32">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center gap-20">
+            <img src="./image/IMAGE (1).png" alt="logo" />
+            <ul class="flex gap-10">
+              <li class="text-[#7EB693] text-lg	font-normal	"><a href="#">Home</a></li>
+              <li class="hover:text-[#7EB693] text-lg	font-normal"><a href="#">About Us</a></li>
+              <li class="hover:text-[#7EB693] text-lg	font-normal"><a href="#">Shop</a></li>
+              <li class="hover:text-[#7EB693] text-lg	font-normal"><a href="#">Pages</a></li>
+              <li class="hover:text-[#7EB693] text-lg	font-normal"><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <div class="shopping flex items-center relative">
+            <img src="./image/Frame.png" alt="Frame" class="w-10 h-10" />
+            <span class="quantity absolute top-[-8px] left-[34px] bg-red-700 border rounded-full	text-white px-1">0</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="list grid grid-cols-3	gap-x-5	gap-y-5 mt-12	"></div>
+
+      <div class="card fixed overflow-y-scroll overflow-x-hidden top-0 left-[100%] w-[500px] h-screen bg-lime-800 duration-500"	>
+        <h1 class="text-[#E8BC0E] font-light	m-0 py-0 px-20 h-[80px] flex items-center">Card</h1>
+        <ul class="listCard"></ul>
+        <div class="checkout relative w-full grid  grid-cols-2" >
+          <div class="total bg-[#E8BC0E] w-full h-[70px] flex justify-center items-center font-bold cursor-pointer ">0</div>
+          <div class="closeShopping total bg-[#E8BC0E] w-full h-[70px] flex justify-center items-center font-bold cursor-pointer ">Close</div>
+        </div>
+      </div>    
+
+    
+
+
+
+    <script src="app.js"></script>
   </body>
+
+  </html>
+</body>
+
 </html>
